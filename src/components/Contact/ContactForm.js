@@ -57,7 +57,7 @@ const ContactForm = () => {
       transition={{ duration: 1 }}
       className="flex flex-col mt-10 items-center md:mr-52"
     >
-      <h3 className="text-xl font-bold text-skyColor  mb-4">Let&apos;s Chat</h3>
+      <h3 className="text-xl font-bold text-skyColor  mb-4">Contáctanos</h3>
       <div className="flex flex-col gap-4">
         <input
           type="text"
@@ -66,7 +66,7 @@ const ContactForm = () => {
           value={name}
           onChange={(e) => setName(e.target.value)}
           maxLength="30"
-          placeholder="Name"
+          placeholder="Nombre"
           className="w-72 md:w-80 p-2 rounded text-primaryColor
       focus:border-2 focus:border-secondaryColor focus:outline-none"
         />
@@ -76,7 +76,7 @@ const ContactForm = () => {
           required
           value={email}
           onChange={(e) => setEmail(e.target.value)}
-          placeholder="Email"
+          placeholder="Correo electrónico"
           className="w-72 md:w-80 p-2 rounded text-primaryColor
         focus:border-2 focus:border-secondaryColor focus:outline-none"
         />
@@ -87,26 +87,26 @@ const ContactForm = () => {
           value={message}
           onChange={(e) => setMessage(e.target.value)}
           maxLength="500"
-          placeholder="Write your message here"
+          placeholder="Escribe tu mensaje acá"
           className="w-72 md:w-80 p-2 rounded text-primaryColor
           focus:border-2 focus:border-secondaryColor focus:outline-none"
         />
         {
         fieldsNotice && (
-          <span className="text-skyColor text-center text-base">Please fill all fields</span>
+          <span className="text-skyColor text-center text-base">Completa todos los campos</span>
         )
       }
         {
         emailNotice && (
-          <span className="text-skyColor text-center text-base">Please enter a valid email</span>
+          <span className="text-skyColor text-center text-base">Ingresa un valor válido</span>
         )
       }
         {
         successNotice && (
-          <span className="text-skyColor text-center text-base">Sending message...</span>
+          <span className="text-skyColor text-center text-base">Enviando mensaje...</span>
         )
       }
-        <button onClick={submission} type="button" className="bg-lightBlueColor ml-24 mt-6 rounded w-28 px-4 py-2 text-base text-skyColor font-medium">Submit</button>
+        <button onClick={submission} type="button" className="bg-lightBlueColor ml-24 mt-6 rounded w-28 px-4 py-2 text-base text-skyColor font-medium">Enviar</button>
       </div>
     </motion.div>
   );

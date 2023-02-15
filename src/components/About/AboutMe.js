@@ -23,67 +23,19 @@ const AboutMe = () => (
     className="mt-14 md:mt-24"
   >
     <div className="flex gap-3 ml-3 md:ml-0">
-      <h2 className="text-2xl md:text-4xl">Aboute Me</h2>
+      <h2 className="text-2xl md:text-4xl">Acerca de</h2>
       <div className="border-b-2 w-3/5 mb-3 border-secondaryColor hr-about" />
     </div>
     <div className="flex flex-col md:flex-row mt-5 ml-4 mr-5 gap-5 text-base text-skyColor md:ml-1 about-text">
       <div className="flex flex-col gap-5 md:mt-3">
         <p>
-          Hello! My name is Ranjeet Singh, commonly known as
-          {' '}
-          <span className="text-secondaryColor">thecodechaser</span>
-          . I love building web
-          applications using many technologies some of them are React, JavaScript, and Rails.
-          Before diving into web development I have worked for one year as a freelance developer
-          where I built desktop apps, Wordpress, and Shopify websites for my clients.
+        La Institución educativa Escuela 18169 se ubica en el distrito de Congón, provincia de Luya , tal I E compete a la UGEL LUYA que inspecciona el servicio educativo, que pertenece a la Dirección regional de educación DRE AMAZONAS. La Institución educativa Escuela 18169, es hablar más que una Institución Educativa, es un ambiente familiar, un equipo de profesionales eficientes que custodian para que los estudiantes se incorporen adecuadamente, tanto en su vida como personas como social y escolar.
         </p>
         <p>
-          I love getting stuck on big problems while coding that makes my life a little more
-          interesting & so I&apos;m a good problem
-          solver. In my free time, I have so much to do that I get confused about choosing
-          between solving algorithms and learning about astronomy but somehow I manage.
-          {' '}
-          <img src={personJuggling} alt="person-juggling" className="w-16 mt-4" />
+        El novedoso sistema para evaluar debe responder a una evaluación diferente que respete niveles y procedimeintos de aprendizajes de los estudiantes, el sistema de evaluación constante es de forma diaria y semanal en actividades pedagógicas (AP) y evaluaciones para desarrollar (EPD) <br/> La institución Escuela 18169 busca perfeccionar personas acreditadas con una aumentada autoestima, conciencia, aptitudes sociales y una estable formación académica, moral y emocional para que puedan adquirir el éxito personal y profesional dentro de una sociedad contemporáneo y cambiante. <br/> En esta institucion educativa sabemos que en Congón esta institución educativa entrega una educación de alta calidad en un ambiente de estudio seguro, en donde nuestros alumnos logran su total crecimiento espiritual, físico, social, intelectual, moral y emocional.
         </p>
       </div>
-      <motion.img
-        initial={{ opacity: 0 }}
-        whileInView={{ opacity: 1 }}
-        transition={{ delay: 0.1, duration: 0.8 }}
-        src={codeSnipped}
-        alt="code-snippet"
-        className="code-snippet rounded-md"
-      />
     </div>
-    <h3 className="text-lg text-secondaryColor mt-5 ml-4 font-bold md:ml-1">Here are few of my stacks I&apos;ve been working with recently:</h3>
-    <motion.div
-      initial={{ opacity: 0 }}
-      whileInView={{ opacity: 1 }}
-      transition={{ delay: 0.1, duration: 0.8 }}
-      className="flex flex-col ml-4 gap-4 mt-2 md:flex-row md:gap-56 md:ml-2"
-    >
-      { stacks.map((stack) => (
-        <div key={stack.name}>
-          <h3 className="text-lg font-medium">{stack.name}</h3>
-          <div className="flex text-base gap-2 text-skyColor mt-2">
-            <ChevronRightIcon className="h-6" />
-            <p>{stack.stack1}</p>
-          </div>
-          <div className="flex text-base gap-2 text-skyColor mt-2">
-            <ChevronRightIcon className="h-6" />
-            <p>{stack.stack2}</p>
-          </div>
-          <div className="flex text-base gap-2 text-skyColor mt-2">
-            <ChevronRightIcon className="h-6" />
-            <p>{stack.stack3}</p>
-          </div>
-          <div className="flex text-base gap-2 text-skyColor mt-2">
-            <ChevronRightIcon className="h-6" />
-            <p>{stack.stack4}</p>
-          </div>
-        </div>
-      ))}
-    </motion.div>
   </motion.div>
 );
 

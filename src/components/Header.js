@@ -8,10 +8,8 @@ function classNames(...classes) {
 
 const menuItems = [
   { name: 'Home', path: '/', current: true },
-  { name: 'About', path: '/about', current: false },
-  { name: 'Portfolio', path: '/portfolio', current: false },
-  { name: 'Contact', path: '/contact', current: false },
-  { name: 'Blog', path: '/blog', current: false },
+  { name: 'Acerca de', path: '/about', current: false },
+  { name: 'Contacto', path: '/contact', current: false },
 ];
 
 const Header = () => {
@@ -35,9 +33,7 @@ const Header = () => {
       className={`flex flex-col z-10  bg-primaryColor px-8 py-7 ${mobileMenu ? 'h-screen' : 'h-fit'} fixed top-0 w-full shadow-xl md:flex-row md:justify-between md:px-20 md:h-fit`}
     >
       <a href="/" className="text-xl">
-        <span className="text-secondaryColor">the</span>
-        <span>code</span>
-        <span className="text-secondaryColor">chaser</span>
+        <span className="text-secondaryColor">IE 18169</span>
       </a>
       <nav>
         <div className="text-secondaryColor md:hidden mobile-btns">
@@ -78,16 +74,6 @@ const Header = () => {
           </ul>
         </div>
       </nav>
-      <Link to="/resume" className={`self-center ${mobileMenu ? 'block' : 'hidden'} md:block`}>
-        <button
-          onClick={() => setMobileMenu(false)}
-          type="button"
-          className={`border-2 border-secondaryColor mt-24 rounded px-4 py-1 w-32 
-      text-secondaryColor hover:text-skyColor hover:border-skyColor md:mt-0`}
-        >
-          Resume
-        </button>
-      </Link>
     </header>
   );
 };

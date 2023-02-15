@@ -25,9 +25,9 @@ const Footer = () => (
         <i className="las la-angle-up" />
       </button>
       <p className="text-md">
-        Copyright © 2022
-        <a href="https://github.com/thecodechaser" className="text-secondaryColor"> Ranjeet Singh </a>
-        All Rights Reserved
+        Copyright © 2023
+        <a href="https://github.com/thecodechaser" className="text-secondaryColor"> I.E. 18169 </a>
+        Todos los derechos reservados
       </p>
     </footer>
   </>

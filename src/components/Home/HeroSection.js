@@ -3,7 +3,8 @@ import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import profilePicture from '../../assets/images/profilePicture.jpg';
 
-const fields = ['Full Stack web developer', 'Love for clean code', 'Remote work aficionado', 'Amateur astronomer'];
+
+const fields = ['Academia', 'Responsabilidad social', 'Eco-amigable', 'Formación holística'];
 
 const HeroSection = () => (
   <motion.div
@@ -16,8 +17,8 @@ const HeroSection = () => (
       <img src={profilePicture} alt="profile" className="h-64 md:h-80 rounded-full" />
     </div>
     <div className="text-skyColor">
-      <p className="text-base text-secondaryColor">Hello!</p>
-      <h1 className="text-secondaryColor text-4xl md:text-5xl">I&apos;m Ranjeet Singh</h1>
+      <p className="text-base text-secondaryColor"></p>
+      <h1 className="text-secondaryColor text-4xl md:text-5xl">I.E. 18169</h1>
       {
           fields.map((field) => (
             <div key={field} className="flex gap-4 mt-3">
@@ -32,7 +33,7 @@ const HeroSection = () => (
           className="bg-lightBlueColor mt-10 rounded px-6 py-2 w-50
       text-lg text-skyColor font-medium hover:bg-secondaryColor hover:text-primaryColor"
         >
-          Get in Touch
+          Contáctanos
         </button>
       </Link>
     </div>

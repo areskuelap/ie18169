@@ -1,7 +1,5 @@
 import { useEffect } from 'react';
 import AboutMe from '../components/About/AboutMe';
-import Experience from '../components/About/Experience';
-import Education from '../components/About/Education';
 
 const About = () => {
   useEffect(() => {
@@ -14,10 +12,6 @@ const About = () => {
     <div className="mt-40">
       {/* about-me-section */}
       <AboutMe />
-      {/* experience-section */}
-      <Experience />
-      {/* education-section */}
-      <Education />
     </div>
   );
 };
